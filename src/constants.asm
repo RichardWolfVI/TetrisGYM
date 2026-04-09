@@ -27,6 +27,7 @@ NO_SFX := 0
 NO_MENU := 0
 ALWAYS_CURTAIN := 0
 QUAL_BOOT := 1
+SWAP_DUTY_CYCLES := 0 ; counters the duty cycle swap present in some clone consoles
 
 INITIAL_CUSTOM_LEVEL := 29
 INITIAL_LINECAP_LEVEL := 39
@@ -100,9 +101,17 @@ MODE_LINECAP
 MODE_DASONLY
 MODE_QUAL
 MODE_PAL
+.if KEYBOARD = 1
+MODE_KEYBOARD
+.endif
 .endenum
 
+.if KEYBOARD = 1
+MODE_QUANTITY = MODE_KEYBOARD + 1
+.else
 MODE_QUANTITY = MODE_PAL + 1
+.endif
+
 MODE_GAME_QUANTITY = MODE_HARDDROP + 1
 
 SCORING_CLASSIC := 0 ; for scoringModifier
@@ -143,7 +152,7 @@ MENU_TOP_MARGIN_SCROLL := 7 ; in blocks
     .byte $F    ; MODE_CRUNCH
     .byte $20   ; MODE_TAP
     .byte $10   ; MODE_TRANSITION
-    .byte $2    ; MODE_MARATHON
+    .byte $4    ; MODE_MARATHON
     .byte $1F   ; MODE_TAPQTY
     .byte $8    ; MODE_CHECKERBOARD
     .byte $4    ; MODE_GARBAGE
@@ -168,6 +177,9 @@ MENU_TOP_MARGIN_SCROLL := 7 ; in blocks
     .byte $1    ; MODE_DASONLY
     .byte $1    ; MODE_QUAL
     .byte $1    ; MODE_PAL
+.if KEYBOARD = 1
+    .byte $1    ; MODE_KEYBOARD
+.endif
 .endmacro
 
 .macro MODENAMES
