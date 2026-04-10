@@ -42,7 +42,7 @@ rocket_palette:
 .else
         .byte   $17,$27,$37     ; Cathedral colors
 .endif
-        .byte   $0F,$37,$38,$27	; Fire colors
+        .byte   $0F,$20,$27,$38	; Fire colors
         .byte   $3F,$00
         .byte   $08
         .byte   $0F,$3C,$38,$00 ; bg
