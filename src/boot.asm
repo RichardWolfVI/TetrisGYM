@@ -40,6 +40,7 @@
         lda #INITIAL_LINECAP_LINES_1
         sta linecapLines+1
 
+		sta disablePauseFlag
         jsr resetScores
 
 .if SAVE_HIGHSCORES
