@@ -26,8 +26,8 @@ waitScreenLoad:
         .repeat 5
         nop
         .endrepeat
-        ; jsr bulkCopyToPpu
-        ; .addr title_nametable_patch
+        jsr bulkCopyToPpu
+        .addr title_nametable_patch
 @justLegal:
 
         jsr waitForVBlankAndEnableNmi
@@ -77,6 +77,7 @@ waitLoopCheckStart:
         bne @title
         lda sleepCounter
         beq waitLoopNext
+		
 @title:
         lda newlyPressedButtons_player1
         cmp #BUTTON_START

@@ -118,16 +118,16 @@ stringOff:
 stringOn:
         .byte $2,'O','N'
 stringPause:
-        .byte $5,'P','A','U','S','E'
+        .byte $5,'P','A','U','S','A'
 stringDebug:
         .byte $5,'B','L','O','C','K'
 stringClear:
 .if SAVE_HIGHSCORES
-        .byte $6,'C','L','E','A','R','?'
+        .byte $8,'i','B','O','R','R','A','R','?'
 .endif
 stringConfirm:
 .if SAVE_HIGHSCORES
-        .byte $6,'S','U','R','E','?','!'
+        .byte $8,'i','S','E','G','U','R','O','?'
 .endif
 stringV4:
         .byte $2,'V','4'

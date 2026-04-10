@@ -13,11 +13,12 @@ rocket_nametable: ; RLE
 legal_nametable: ; RLE
         .incbin "nametables/legal_nametable.bin"
 title_nametable_patch: ; stripe
-        .byte $21, $69, $5, $1D, $12, $1D, $15, $E
+        .byte $21, $E6, 5, "PULSA"
+		.byte $21, $F5, 5, "START"
         .byte $FF
 rocket_nametable_patch: ; stripe
-        .byte $20, $83, 5, $19, $1B, $E, $1c, $1c
-        .byte $20, $A3, 5, $1c, $1d, $a, $1b, $1d
+        .byte $20, $83, 5, "PULSA"
+        .byte $20, $A3, 5, "START"
         .byte $FF
 
 speedtest_nametable_patch:

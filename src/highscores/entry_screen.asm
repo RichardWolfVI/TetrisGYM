@@ -129,7 +129,7 @@ highScoreEntryScreen:
         jsr showHighScores
         lda #$21
         sta tmp1
-        lda #$89
+        lda #$8D
         sta tmp2
         jsr displayModeText
         lda #$02

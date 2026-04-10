@@ -15,7 +15,7 @@ GHIJKLMNOPQRSTUV
 WXYZ-,˙>rtyfhvbn
 ########qweadzxc
 ############jkl/
-ui!###g@######()
+ui!##?g@#¡¿:##()
 ############^$#.
 ################
 ################
@@ -35,19 +35,19 @@ drawTiles(buffer, lookup, `
 ▀a                            d□
 ╢a                            d╢
 ╂a                            d□
-▂a         GOOD GAME          d▀
+▂a        ¡BUEN JUEGO!        d▀
 ╢a                            d╡
 ╀a                            d╱
 ▂a                            d▀
-╠a         YOU ARE A          d▃
+╠a        DOMINASTE EN        d▃
 ╰a                            d▃
-╠a       TETRIS MASTER.       d╢
+╠a           TETRIS           d╢
 ╰a                            d╀
 ▀a                            d▂
-╢a   PLEASE ENTER YOUR NAME   d╢
+╢a     INGRESA TU NOMBRE:     d╢
 ╀a                            d╲
 ▂a rtttttttttttttttttttttttty d╲
-▃a fNAME     SCORE   LNS  LVh d▂
+▃a fNOMBRE   PUNTOS  LNS  NVh d▂
 ▀a jbbbbbbbbbbbbbbbbbbbbbbbbl d▀
 ▀a f                        h d▃
 ▐a f                        h d▀

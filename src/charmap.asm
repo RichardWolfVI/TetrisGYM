@@ -35,10 +35,14 @@
 .charmap 'Y', $22
 .charmap 'Z', $23
 .charmap '-', $24
-.charmap '.', $25
+.charmap ',', $25
+.charmap '.', $6f
 .charmap '>', $27
 .charmap '!', $52
+.charmap 'e', $59
 .charmap '?', $55
+.charmap 'i', $5a
+.charmap ':', $5a
 .charmap '^', $29
 .charmap '(', $2a
 .charmap ')', $2b

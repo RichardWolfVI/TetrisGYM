@@ -19,8 +19,8 @@ title_palette:
         .byte   $3F,$00
         .byte   $14
         .byte   $0F,$3C,$38,$00 ; bg
-        .byte   $0F,$21,$27,$26
-        .byte   $0F,$30,MENU_HIGHLIGHT_COLOR,$00
+        .byte   $0F,$11,$27,$16	; logo
+        .byte   $0F,$30,$27,$00
         .byte   $0F,$22,$2A,$28
         .byte   $0F,$30,$29,$27 ; sprite
         .byte   $FF
@@ -54,6 +54,6 @@ wait_palette:
         .byte   $30             ; sprite
         .byte   $3F,$00
         .byte   $08
-        .byte   $0F,$26,$27,$21 ; bg
+        .byte   $0F,$27,$11,$16 ; bg
         .byte   $0F,$30,$27,$37
         .byte   $FF
