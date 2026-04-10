@@ -39,7 +39,7 @@
         sta linecapLines
         lda #INITIAL_LINECAP_LINES_1
         sta linecapLines+1
-
+		lda #1
 		sta disablePauseFlag
         jsr resetScores
 
