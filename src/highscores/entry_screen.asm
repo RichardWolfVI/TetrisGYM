@@ -129,7 +129,7 @@ highScoreEntryScreen:
         jsr showHighScores
         lda #$21
         sta tmp1
-        lda #$89
+        lda #$8D
         sta tmp2
         jsr displayModeText
         lda #$02
@@ -176,6 +176,17 @@ highScoreEntryScreen:
         jmp @ret
 
 @checkForAOrRightPressed:
+
+.if KEYBOARD = 1
+        jsr readKbHighScoreEntry
+        bmi @noKeyboardInput
+        beq @nextTile
+        cmp #$7F
+        beq @prevTile
+        jmp @waitForVBlank
+@noKeyboardInput:
+
+.endif
         lda #BUTTON_RIGHT
         jsr menuThrottle
         bne @nextTile

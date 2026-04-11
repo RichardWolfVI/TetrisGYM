@@ -39,7 +39,8 @@
         sta linecapLines
         lda #INITIAL_LINECAP_LINES_1
         sta linecapLines+1
-
+		lda #1
+		sta disablePauseFlag
         jsr resetScores
 
 .if SAVE_HIGHSCORES
@@ -76,14 +77,6 @@
         sta PPUMASK
         jsr LE006
         jsr updateAudio2
-        lda #$C0
-        sta stack
-        lda #$80
-        sta stack+1
-        lda #$35
-        sta stack+3
-        lda #$AC
-        sta stack+4
         jsr updateAudioWaitForNmiAndDisablePpuRendering
         jsr disableNmi
         jsr drawBlackBGPalette

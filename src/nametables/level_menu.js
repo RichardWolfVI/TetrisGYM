@@ -36,7 +36,7 @@ drawTiles(buffer, lookup, `
 ɲa                   zxxxxxxc dʑ
 ʠa                            dɲ
 ʐa      ĄąąąąąĆ               dʂ
-ʂa      ćLEVELĈ               dʑ
+ʂa      ćNIVELĈ               dʑ
 ɠa      ĉĊĊĊĊĊċ               dʂ
 ɰa    rtututututy             dʑ
 ʀa    f0f1f2f3f4h   rttty     dʂ
@@ -46,7 +46,7 @@ drawTiles(buffer, lookup, `
 ʂa                            dʃ
 ɢa                            dʑ
 ʠa rtttttttttttttttttttttttty dɲ
-ɢa fNAME     SCORE   LNS  LVh dʂ
+ɢa fNOMBRE   PUNTOS  LNS  NVh dʂ
 ╂a jbbbbbbbbbbbbbbbbbbbbbbbbl dʑ
 ʂa f                        h dʂ
 ʀa f                        h dʑ
