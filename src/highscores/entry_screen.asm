@@ -129,7 +129,7 @@ highScoreEntryScreen:
         jsr showHighScores
         lda #$21
         sta tmp1
-        lda #$8D
+        lda #$8D	;move mode name text to the center
         sta tmp2
         jsr displayModeText
         lda #$02
