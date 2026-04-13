@@ -45,7 +45,7 @@ rocket_palette:
         .byte   $0F,$20,$27,$38	; Fire colors
         .byte   $3F,$00
         .byte   $08
-        .byte   $0F,$3C,$38,$00 ; bg
+        .byte   $0F,$01,$1A,$00 ; bg
         .byte   $0F,$20,$12,$15
         .byte   $FF
 wait_palette:

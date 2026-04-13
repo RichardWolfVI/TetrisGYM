@@ -214,12 +214,12 @@ handleRocket:
         ror ; A / 8
         cmp #$80
         ror ; A / 16
-        adc #$78
+        adc #$60 ;rocket Y position
         adc endingRocketY
 
         ; draw cathedral
         sta spriteYOffset
-        lda #$68
+        lda #$70
         adc endingRocketX
         sta spriteXOffset
         lda #<spriteCathedral
@@ -229,10 +229,10 @@ handleRocket:
         jsr loadRectIntoOamStaging
 
 .if INES_MAPPER <> 0 ; leave offsets the same when using smaller nrom ufo
-        lda #$3F
+        lda #$37
         adc spriteYOffset
         sta spriteYOffset
-        lda #$78
+        lda #$70
         adc endingRocketX
         sta spriteXOffset
 .endif
