@@ -170,6 +170,7 @@ endingLoop:
         lda #1
         sta screenStage
         lda #0
+		
         sta endingRocketCounter
 @waitEnd:
         lda newlyPressedButtons_player1
@@ -214,12 +215,12 @@ handleRocket:
         ror ; A / 8
         cmp #$80
         ror ; A / 16
-        adc #$60 ;rocket Y position
+        adc #$58 ;rocket Y position
         adc endingRocketY
 
         ; draw cathedral
         sta spriteYOffset
-        lda #$70
+        lda #$78
         adc endingRocketX
         sta spriteXOffset
         lda #<spriteCathedral
@@ -232,7 +233,7 @@ handleRocket:
         lda #$37
         adc spriteYOffset
         sta spriteYOffset
-        lda #$70
+        lda #$80
         adc endingRocketX
         sta spriteXOffset
 .endif
