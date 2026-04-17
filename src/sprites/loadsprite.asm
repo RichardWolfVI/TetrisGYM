@@ -145,9 +145,9 @@ spriteHeartCursor:
 spriteHeart:
         .byte   $00,$6e,$00,$00,$FF
 spriteReady:
-        .byte   $00,'L',$01,$00,$08,'I',$01,$00
-        .byte   $10,'S',$01,$01,$18,'T',$01,$00
-        .byte   $20,'O',$01,$01
+        .byte   $00,'R',$01,$00,$08,'E',$01,$00
+        .byte   $10,'A',$01,$00,$18,'D',$01,$00
+        .byte   $20,'Y',$01,$FF
         .byte   $FF
 spriteCustomLevelCursor:
         .byte   $00,$6A,$00,$00,$21,$6A,$80,$00
